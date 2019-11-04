@@ -1,17 +1,17 @@
-// let i = 0;
-
-// function increment() {
-//   i++;
-//   console.log(i);
-// }
-
-// setInterval(increment, 1000)
 
 
+let i = 0;
 
-let today = new Date();
-let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-console.log(time);
+function increment() {
+    let today = new Date();
+    // let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    // const clock = time;
 
-// const time = document.getElementById("time");
+    const paragraph = document.getElementById("tmn");
+    paragraph.textContent = today;
+   
+    i++;
+    console.log(i);
+}
 
+setInterval(increment, 1000);
