@@ -1,4 +1,14 @@
-p {
-    font-family: verdana;
-    font-size: 20px;
+
+p { 
+    text-align: center;
+    color: rgb(194, 48, 48);
+    background: lightgoldenrodyellow;
+    font-size: 60px;
+    
+    
   }
+
+  body {
+    background: darkslategray;
+  }
+ 
