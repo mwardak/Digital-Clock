@@ -1,5 +1,6 @@
 
 // display clock with AM:PM
+
 let i = 0;
 
 function increment() {
@@ -10,9 +11,9 @@ function increment() {
     const paragraph = document.getElementById("tmn").textContent = clock;
     
     
-    const militaryTime = ["AM", "PM"]
+    const militaryTime = ["AM", "PM"];
 
-    if (clock =< 12) {
+    if (clock < 12) {
         return militaryTime[0];
     } else {
         return militaryTime[1];
