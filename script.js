@@ -11,15 +11,17 @@ function increment() {
     const paragraph = document.getElementById("tmn").textContent = clock;
     
     
-    const militaryTime = ["AM", "PM"];
+    let amPmString = "";
 
     if (clock < 12) {
-        return militaryTime[0];
-    } else {
-        return militaryTime[1];
+        amPmString = "AM";
+}   else {
+        amPmString = "PM";
+
+        
 }
    
-    const ampm = document.getElementById("ap").textContent = militaryTime;
+    const ampm = document.getElementById("ap").textContent = amPmString;
     
 
     i++;
@@ -44,8 +46,8 @@ function increment() {
 
     const setDate =  mDay + ", " + month + ", "+ nDay + ", " + year;
 
-    const x = document.getElementById("mw"); 
-    x.textContent = setDate; 
+    const x = document.getElementById("mw").textContent = setDate; 
+    
 
     console.log(setDate);
 
