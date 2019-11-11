@@ -1,32 +1,26 @@
 
 // display clock with AM:PM
 
-let i = 0;
-
 function increment() {
+       
+    
+    
+    
     let today = new Date();
-    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    const clock = time;
-
-    const paragraph = document.getElementById("tmn").textContent = clock;
-    
-    
     let amPmString = "";
-
-    if (clock < 12) {
+    if (today.getHours() < 12) {
         amPmString = "AM";
 }   else {
         amPmString = "PM";
-
-        
 }
-   
-    const ampm = document.getElementById("ap").textContent = amPmString;
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +  amPmString
     
+    let clock = time;
 
-    i++;
+
+    const paragraph = document.getElementById("tmn").textContent = clock;
     
-    console.log(i);
+       
 }
 
 
@@ -49,11 +43,14 @@ function increment() {
     const x = document.getElementById("mw").textContent = setDate; 
     
 
-    console.log(setDate);
+// display toggle button for AM/PM
+
+// const submitButton = document.getElementById('submit-btn');
 
 
 
-
+// submitButton.addEventListener('click', function(e));
+    
 
 
 setInterval(increment, 1000);
