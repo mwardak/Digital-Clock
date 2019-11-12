@@ -17,9 +17,7 @@ function increment() {
     
     let clock = time;
 
-
-    const paragraph = document.getElementById("tmn").textContent = clock;
-    
+    const paragraph = document.getElementById("tmn").textContent = clock;  
        
 }
 
@@ -43,13 +41,34 @@ function increment() {
     const x = document.getElementById("mw").textContent = setDate; 
     
 
-// display toggle button for AM/PM
+// Toggle button for 12/24 hour display
 
-// const submitButton = document.getElementById('submit-btn');
+function toggle() {
+    
+    let militaryTime = today.getHours();
+
+    if (militaryTime < 12) {
+       militaryTime = ;
+    } else if (militaryTime === 0) {
+        militaryTime = ;
+    }
+       
+    
+
+       document.getElementById("button").addEventListener('click', toggle);
+
+    
+        
+    
+
+}   
 
 
 
-// submitButton.addEventListener('click', function(e));
+// function toggle()1{}
+
+
+// 
     
 
 
