@@ -1,8 +1,17 @@
 
 // display clock with AM:PM
+function isMilitaryTime()
+    let militaryTime = new Date();
+    let toggle = militaryTime.getHours();
+    
+    x = "";
 
-let militaryTime = new Date();
-let toggle = militaryTime.getHours();
+    if (toggle === true) {
+        x = toggle;
+}   else if (isMilitaryTime === false) {
+        x-= toggle;
+}
+
 
 function increment() {
        
@@ -46,18 +55,13 @@ function increment() {
 
 
     
-    
 
-    if (toggle < 12) {
-        toggle -= 12;
-    } else if (toggle === 0) {
-        toggle = 12;
-    }
+    
 
    
         
 
-        const tggle = document.getElementById("button").addEventListener('click', toggle);
+     document.getElementById("button").addEventListener('click', isMilitaryTime);
 }    
 
 
