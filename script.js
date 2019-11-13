@@ -1,25 +1,26 @@
 
 // display clock with AM:PM
 
+let militaryTime = new Date();
+let toggle = militaryTime.getHours();
+
 function increment() {
        
-    
-    
-    
-    let today = new Date();
+
+    const today = new Date();
     let amPmString = "";
     if (today.getHours() < 12) {
         amPmString = "AM";
 }   else {
         amPmString = "PM";
 }
-    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +  amPmString
+    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +  amPmString
     
-    let clock = time;
+    const clock = time;
 
     const paragraph = document.getElementById("tmn").textContent = clock;  
        
-}
+
 
 
 
@@ -29,7 +30,7 @@ function increment() {
 
     const monthly= ['January','February','March','April','May','June','July','August','September','October','November','December'];
     const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    const year = 2019;
+    const year = today.getFullYear();
 
     
     const month = monthly[dte.getMonth()];
@@ -43,33 +44,24 @@ function increment() {
 
 // Toggle button for 12/24 hour display
 
-function toggle() {
-    
-    let militaryTime = today.getHours();
 
-    if (militaryTime < 12) {
-       militaryTime = ;
-    } else if (militaryTime === 0) {
-        militaryTime = ;
+    
+    
+
+    if (toggle < 12) {
+        toggle -= 12;
+    } else if (toggle === 0) {
+        toggle = 12;
     }
-       
-    
 
-       document.getElementById("button").addEventListener('click', toggle);
-
-    
+   
         
-    
 
-}   
-
-
-
-// function toggle()1{}
+        const tggle = document.getElementById("button").addEventListener('click', toggle);
+}    
 
 
-// 
-    
+
 
 
 setInterval(increment, 1000);
