@@ -6,12 +6,12 @@ HTML
 CSS
 JAVASCRIPT
 
-<!--
+
 <br>
 
-Try it out [here](https://otterwerks.github.io/JSTetris) on GitHub Pages. Mobile Friendly!
+Take a look [here](https://codepen.io/mwardak/project/full/ZRpLYj) 
 
-<br> -->
+<br>
 
 
 <br>
