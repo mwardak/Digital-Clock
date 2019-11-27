@@ -1,29 +1,23 @@
 # Digital Clock
 
-_This is a Digital Clock I created using:_
+This is a Digital Clock I created using:
 
-HTML
-CSS
-JAVASCRIPT
+_HTML_-_CSS_-_JAVASCRIPT_
 
 
-<!-- <br>
+<br>
 
 Take a [look](https://codepen.io/mwardak/project/full/ZRpLYj) 
 
-<br> -->
+<br>
 
 
 <br>
 
 ## Summary
 
-This is my first project as a developer.
+This is a digital clock that will display the current time and date.
+It also has a toggle button to switch between 12/24 hour format.
 
 <br>
 
-## Features
-
-- Displays a digital clock with current date
-- Toggle button to switch between 12/24 hours
-<br>
