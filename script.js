@@ -15,19 +15,32 @@ function increment() {
   if (isMilitaryTime === true) {
     hours = today.getHours();
   } else {
-    if (hours = today.getHours() <12){
-      hours = today.getHours()
-    }else {
-    hours = today.getHours() - 12;
+    if ((hours = today.getHours() < 12)) {
+      hours = today.getHours();
+    } else {
+      hours = today.getHours() - 12;
     }
   }
 
-  const time =
-    hours + ":" + today.getMinutes() + ":" + today.getSeconds() + amPmString;
+  let minutes = "";
 
-  const clock = time;
+  if (today.getMinutes() < 10) {
+    minutes = "0" + today.getMinutes();
+  } else {
+    minutes = today.getMinutes();
+  }
 
-  const paragraph = (document.getElementById("timer-display").textContent = clock);
+  let seconds = "";
+
+  if (today.getSeconds() < 10) {
+    seconds = "0" + today.getSeconds();
+  } else {
+    seconds = today.getSeconds();
+  }
+
+  const time = hours + ":" + minutes + ":" + seconds + " " + amPmString;
+
+  document.getElementById("timer-display").textContent = time;
 
   //display the month and weekday
 
@@ -64,7 +77,7 @@ function increment() {
 
   const setDate = mDay + ", " + month + ", " + nDay + ", " + year;
 
-  const x = (document.getElementById("date-display").textContent = setDate);
+  document.getElementById("date-display").textContent = setDate;
 }
 setInterval(increment, 1000);
 

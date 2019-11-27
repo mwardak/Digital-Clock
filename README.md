@@ -7,11 +7,11 @@ CSS
 JAVASCRIPT
 
 
-<br>
+<!-- <br>
 
 Take a [look](https://codepen.io/mwardak/project/full/ZRpLYj) 
 
-<br>
+<br> -->
 
 
 <br>
@@ -26,4 +26,4 @@ This is my first project as a developer.
 
 - Displays a digital clock with current date
 - Toggle button to switch between 12/24 hours
-  <br>
+<br>
