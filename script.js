@@ -15,6 +15,9 @@ function increment() {
   if (isMilitaryTime === true) {
     hours = today.getHours();
   } else {
+    if (hours = today.getHours() < 12){
+    hours = today.getHours();
+  } else {
     hours = today.getHours() - 12;
   }
 
@@ -23,9 +26,7 @@ function increment() {
 
   const clock = time;
 
-  const paragraph = (document.getElementById(
-    "timer-display"
-  ).textContent = clock);
+  const paragraph = (document.getElementById("timer-display").textContent = clock);
 
   //display the month and weekday
 
