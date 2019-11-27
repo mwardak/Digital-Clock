@@ -2,7 +2,6 @@
 let isMilitaryTime = false;
 
 function increment() {
-
   const today = new Date();
   let amPmString = "";
   if (today.getHours() < 12) {
@@ -13,25 +12,48 @@ function increment() {
 
   let hours = "";
 
-    if (isMilitaryTime === true) {
-      hours = today.getHours();
-    } else {
-      hours = today.getHours() - 12;
-    }
-  
+  if (isMilitaryTime === true) {
+    hours = today.getHours();
+  } else {
+    hours = today.getHours() - 12;
+  }
 
-  const time = hours + ":" + today.getMinutes() + ":" + today.getSeconds() + amPmString;
+  const time =
+    hours + ":" + today.getMinutes() + ":" + today.getSeconds() + amPmString;
 
   const clock = time;
 
-  const paragraph = (document.getElementById("tmn").textContent = clock);
+  const paragraph = (document.getElementById(
+    "timer-display"
+  ).textContent = clock);
 
   //display the month and weekday
 
   const dte = new Date();
 
-  const monthly = ["January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const weekday = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const monthly = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
   const year = today.getFullYear();
 
   const month = monthly[dte.getMonth()];
@@ -40,19 +62,16 @@ function increment() {
 
   const setDate = mDay + ", " + month + ", " + nDay + ", " + year;
 
-  const x = (document.getElementById("mw").textContent = setDate);
-
-  // Toggle button for 12/24 hour display
-  document.getElementById("button").addEventListener("click", function() {
-    // logic for toggling the isMilitaryTime variable
-    console.log('before: ', isMilitaryTime);
-    if (isMilitaryTime === true) {
-      isMilitaryTime = false;
-    } else {
-      isMilitaryTime = true;
-    }
-    console.log('after: ', isMilitaryTime);
-  });
-  
+  const x = (document.getElementById("date-display").textContent = setDate);
 }
 setInterval(increment, 1000);
+
+// Toggle button for 12/24 hour display
+
+document.getElementById("button").addEventListener("click", function() {
+  if (isMilitaryTime === true) {
+    isMilitaryTime = false;
+  } else {
+    isMilitaryTime = true;
+  }
+});
