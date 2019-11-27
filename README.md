@@ -13,7 +13,6 @@ Try it out [here](https://otterwerks.github.io/JSTetris) on GitHub Pages. Mobile
 
 <br> -->
 
-<p><img src="icons/javascript.svg" width="50">&nbsp&nbsp&nbsp&nbsp<img src="icons/css-3.svg" width="40">&nbsp&nbsp&nbsp&nbsp<img src="icons/html-5.svg" width="40">
 
 <br>
 

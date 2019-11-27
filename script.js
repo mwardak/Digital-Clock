@@ -15,10 +15,11 @@ function increment() {
   if (isMilitaryTime === true) {
     hours = today.getHours();
   } else {
-    if (hours = today.getHours() < 12){
-    hours = today.getHours();
-  } else {
+    if (hours = today.getHours() <12){
+      hours = today.getHours()
+    }else {
     hours = today.getHours() - 12;
+    }
   }
 
   const time =
