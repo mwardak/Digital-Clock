@@ -9,7 +9,7 @@ JAVASCRIPT
 
 <br>
 
-Take a look [here](https://codepen.io/mwardak/project/full/ZRpLYj) 
+Take a [look](https://codepen.io/mwardak/project/full/ZRpLYj) 
 
 <br>
 
