@@ -4,12 +4,15 @@ This is a Digital Clock I created using:
 
 _HTML_-_CSS_-_JAVASCRIPT_
 
+<br>
+
+To view the clock, click here -->(https://codepen.io/mwardak/project/full/ZRpLYj) 
 
 <br>
 
-Take a [look](https://codepen.io/mwardak/project/full/ZRpLYj) 
+![picture](clock.png)
 
-<br>
+
 
 
 <br>
