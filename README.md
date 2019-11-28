@@ -10,7 +10,7 @@ To view the clock, click here -->(https://codepen.io/mwardak/project/full/ZRpLYj
 
 <br>
 
-![picture](clock.png)
+![picture](clock.PNG)
 
 
 
